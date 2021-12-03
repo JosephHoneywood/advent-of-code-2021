@@ -39,9 +39,9 @@ increased_depth_counter = 0
 for index, current_value in enumerate(lines):
 
     if index == 0: pass 
-    else:
-        previous_value = lines[index-1]
-        if current_value > previous_value: increased_depth_counter += 1
+
+    previous_value = lines[index-1]
+    if current_value > previous_value: increased_depth_counter += 1
 
 ### PART 2
 
@@ -51,14 +51,10 @@ increased_depth_counter = 0
 
 for index, current_value in enumerate(lines):
 
+    if index == 0: pass
     if index == index_stop: break
 
-    sum_of_three = current_value + lines[index+1] + lines[index+2]
-    sliding_sum.append(sum_of_three)
+    sum_of_current_three = current_value + lines[index+1] + lines[index+2]
+    sum_of_previous_three = lines[index-1] + current_value + lines[index+1]
 
-for index, current_value in enumerate(sliding_sum):
-
-    if index == 0: pass
-    
-    previous_value = sliding_sum[index-1]
-    if current_value > previous_value: increased_depth_counter += 1 
+    if sum_of_current_three > sum_of_previous_three: increased_depth_counter += 1
