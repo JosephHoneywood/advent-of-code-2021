@@ -45,9 +45,7 @@ for index, current_value in enumerate(lines):
 
 ### PART 2
 
-index_stop = len(lines)-2
-sliding_sum = []
-increased_depth_counter = 0
+index_stop, increased_depth_counter = len(lines)-2, 0
 
 for index, current_value in enumerate(lines):
 
