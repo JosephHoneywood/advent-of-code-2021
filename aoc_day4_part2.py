@@ -26,8 +26,9 @@ AAAAAAA                   AAAAAAA  OOOOOOOOO             CCCCCCCCCCCCC     DDDDD
 
                                                                                                                                                                                                                                                                                                                
 """
-import itertools
 import sys
+import itertools
+
 
 with open("inputs/day4.txt", "r") as f:
     data = [l.split() for l in f.read().splitlines()]
