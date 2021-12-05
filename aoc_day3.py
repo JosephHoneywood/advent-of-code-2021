@@ -45,7 +45,7 @@ print(int(gamma_rate,2) * int(epsilon_rate,2))
 #PART 2
 oxygen_frame = pd.DataFrame(binary_report)
 c02_frame = pd.DataFrame(binary_report)
-metrics = [(oxygen_frame, "most common"), (c02_frame, 'least common')]
+metrics = [(oxygen_frame, "most common"), (c02_frame, "least common")]
 
 for metric in metrics:
 
