@@ -33,10 +33,8 @@ import itertools
 with open("inputs/day4.txt", "r") as f:
     data = [l.split() for l in f.read().splitlines()]
 
-bingo_calls = [int(n) for n in data[0][0].split(',')]
-bingo_boards = data[1:]
-board = []
-board_holder = []
+bingo_calls, bingo_boards = [int(n) for n in data[0][0].split(',')], data[1:]
+board, board_holder = [], []
 
 for board_data in bingo_boards[1:]:
     if board_data == []:
