@@ -29,7 +29,6 @@ AAAAAAA                   AAAAAAA  OOOOOOOOO             CCCCCCCCCCCCC     DDDDD
 
 import itertools
 from collections import Counter
-from os import closerange
 
 def get_range(value1, value2):
     if value1 > value2:
