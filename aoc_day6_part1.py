@@ -24,6 +24,7 @@ AAAAAAA                   AAAAAAA  OOOOOOOOO             CCCCCCCCCCCCC     DDDDD
                                                                                                                 yyyyyyy                                        
                                                                                                                                                                
   
+This does nottttt work well for part 2. Very memory intensive to store the state of all the fish considering the exponential growth
 
 """
 

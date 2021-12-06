@@ -31,12 +31,13 @@ inputs = [int(f) for f in open('inputs/day6.txt').read().strip().split(',')]
 
 fish = [inputs.count(i) for i in range(9)]
 
+print(fish)
+
 for i in range(256):
 
     n = fish.pop(0)
     fish[6] += n
     fish.append(n)
-    print(fish)
     assert len(fish) == 9
 
 # print(sum(fish))
