@@ -28,12 +28,9 @@ AAAAAAA                   AAAAAAA  OOOOOOOOO             CCCCCCCCCCCCC     DDDDD
 """
 
 inputs = [int(f) for f in open('inputs/day6.txt').read().strip().split(',')]
+fish, days = [inputs.count(i) for i in range(9)], 256
 
-fish = [inputs.count(i) for i in range(9)]
-
-print(fish)
-
-for i in range(256):
+for i in range(days):
 
     n = fish.pop(0)
     fish[6] += n
