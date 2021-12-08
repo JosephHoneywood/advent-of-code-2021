@@ -27,8 +27,8 @@ AAAAAAA                   AAAAAAA  OOOOOOOOO             CCCCCCCCCCCCC     DDDDD
                                                                                                                                                             
 """
 
-import statistics
 import math
+import statistics
 
 inputs = [int(c) for c in open('inputs/day7.txt').read().strip().split(",")]
 
@@ -50,13 +50,9 @@ if not whole:
 
         fuel_costs.append(fuel_cost)
 
-    print(min(fuel_costs))
-
 else:
 
     fuel_cost = 0
     for h_pos in inputs:
 
         fuel_cost += sum(range(abs(h_pos - m)+1))
-
-    print(fuel_cost)
